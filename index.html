@@ -1,128 +1,285 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORTICULTURE CONSULTING OF OREGON LLC | Advanced Eco-Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #051611; /* Deep Luxurious Forest Onyx */
+            color: #f1efe9; /* Premium Botanical Cream */
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .font-organic-brand {
+            font-family: 'Syne', sans-serif;
+        }
+        
+        /* 2026 Eco-Technical Color Accents */
+        .text-eco-neon { color: #dfff00; }
+        .bg-eco-neon { background-color: #dfff00; }
+        .border-eco-neon { border-color: #dfff00; }
+        
+        .bg-botanic-cream { background-color: #f1efe9; }
+        .text-botanic-cream { color: #f1efe9; }
+
+        /* Dynamic Curved Glass Panels for Horticulture Tech */
+        .eco-mesh-card {
+            background: rgba(12, 36, 29, 0.6);
+            border: 1px solid rgba(223, 255, 0, 0.15);
+            border-radius: 24px;
+            backdrop-filter: blur(16px);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .eco-mesh-card:hover {
+            border-color: rgba(223, 255, 0, 0.6);
+            box-shadow: 0 15px 40px rgba(223, 255, 0, 0.08);
+            transform: translateY(-6px);
+        }
+
+        /* Continuous Scroll Reveal Element Styling */
+        .scroll-block-reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        .scroll-block-reveal.active-node {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased overflow-x-hidden">
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <!-- SCIENTIFIC NAVIGATION OVERLAY -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#051611]/85 backdrop-blur-md border-b border-white/5 px-6 py-5 md:px-12 flex items-center justify-between">
+        <a href="#" class="font-organic-brand font-800 text-lg md:text-xl tracking-tight text-white flex items-center gap-2">
+            HORTICULTURE <span class="text-eco-neon font-normal text-xs font-mono tracking-wider border border-eco-neon/30 px-2 py-0.5 rounded-sm">OREGON LLC</span>
+        </a>
+        <nav class="hidden xl:flex items-center gap-8 text-[11px] font-medium tracking-[0.2em] uppercase text-neutral-400">
+            <a href="#botanical-science" class="hover:text-eco-neon transition-colors">01 // Botanical Science</a>
+            <a href="#technical-advisory" class="hover:text-eco-neon transition-colors">02 // Technical Advisory</a>
+            <a href="#sustainable-yield" class="hover:text-eco-neon transition-colors">03 // Sustainable Yield</a>
+            <a href="#laboratory-node" class="hover:text-eco-neon transition-colors">04 // Lab Infrastructure</a>
+            <a href="#central-registry" class="hover:text-eco-neon transition-colors">05 // Registry Control</a>
+        </nav>
+        <a href="tel:15307479661" class="bg-eco-neon text-[#051611] font-bold text-xs px-6 py-3 tracking-wider uppercase hover:bg-white hover:scale-105 transition-all rounded-full">
+            SYSTEM DISPATCH
+        </a>
+    </header>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- SECTION 1: HERO EXPOSITION (The Organic Tech Interface) -->
+    <main class="min-h-screen flex flex-col justify-center relative px-6 md:px-12 pt-32 pb-20">
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-eco-neon"></span>
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-300">Agricultural & Technical Consultations l l 2026</span>
+                </div>
+                <h1 class="text-5xl md:text-8xl font-organic-brand font-800 text-white tracking-tighter leading-[0.95] uppercase">
+                    ADVANCED <br><span class="text-eco-neon">CROP SCIENCE.</span> <br>ELITE YIELDS.
+                </h1>
+                <p class="text-neutral-400 text-sm md:text-base max-w-xl font-light leading-relaxed">
+                    Horticulture Consulting of Oregon LLC delivers high-precision botanical analysis, data-driven soil engineering, and full-scale macro-agricultural commercial system diagnostics.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#botanical-science" class="bg-white/5 hover:bg-white/10 border border-white/15 text-white text-xs font-bold uppercase tracking-widest px-8 py-4 rounded-xl transition-all">
+                        Initiate Operations Analysis
+                    </a>
+                    <a href="#central-registry" class="text-eco-neon text-xs font-bold uppercase tracking-widest px-4 py-4 flex items-center gap-2 hover:underline">
+                        Secure System Access &rarr;
+                    </a>
+                </div>
+            </div>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+            <div class="lg:col-span-5 h-[480px] md:h-[620px] rounded-[32px] overflow-hidden border border-white/10 relative bg-[#0c241d] group">
+                <!-- PHOTO 1: Stunning premium futuristic smart greenhouse / high tech vertical indoor farming architecture -->
+                <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition duration-1000" alt="Advanced Smart Greenhouse Systems Oregon">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#051611] via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 p-6 bg-[#051611]/90 backdrop-blur-md border border-white/5 rounded-2xl">
+                    <span class="text-eco-neon font-mono text-[9px] tracking-widest uppercase block mb-1">// SYSTEM DATA SECURED</span>
+                    <p class="text-xs text-white">Oregon Agricultural Infrastructure Integration Active.</p>
+                </div>
+            </div>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+        </div>
+    </main>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+    <!-- SECTION 2: VERIFIED INDEX INTERCEPT -->
+    <section class="py-20 bg-gradient-to-r from-[#030e0b] to-[#0a271f] border-y border-white/5 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div class="space-y-2">
+                <span class="text-eco-neon font-mono text-xs font-bold tracking-widest block uppercase">// DOCUMENT CONTROL LINK</span>
+                <h2 class="text-2xl md:text-3xl font-organic-brand font-700 text-white uppercase tracking-tight">Verified Source: image_8d3f8b.jpg</h2>
+            </div>
+            <div class="bg-white/5 border border-white/10 px-6 py-4 rounded-xl font-mono text-xs text-neutral-400">
+                <span class="text-white block font-semibold mb-1">Key Principal Registered:</span> J D JOHNSON
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+    <!-- SECTION 3: ULTRA-LONG IMMERSIVE SYSTEM CAPACITY FLOW -->
+    <section class="py-32 px-6 md:px-12 max-w-7xl mx-auto space-y-40">
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+        <!-- SUB-SECTION 01 -->
+        <div id="botanical-science" class="grid lg:grid-cols-12 gap-12 items-center scroll-block-reveal">
+            <div class="lg:col-span-6 order-2 lg:order-1 space-y-6">
+                <div class="text-eco-neon font-mono text-xs font-bold tracking-widest uppercase">// SYSTEM MODULE 01</div>
+                <h3 class="text-3xl md:text-5xl font-organic-brand font-700 text-white uppercase leading-tight">Advanced Scientific <br><span class="text-neutral-400">Horticulture Advisory</span></h3>
+                <p class="text-neutral-400 text-sm leading-relaxed font-light">
+                    Transforming industrial cultivation networks through state-of-the-art plant pathology screenings, precise soil micro-nutrient balancing, and tailored metabolic optimization models.
+                </p>
+                <div class="border-l-2 border-eco-neon pl-4 font-mono text-xs text-neutral-400">
+                    Customized metrics targeting scalable production increases for corporate growers.
+                </div>
+            </div>
+            <div class="lg:col-span-6 order-1 lg:order-2 h-[420px] md:h-[520px] overflow-hidden eco-mesh-card">
+                <!-- PHOTO 2: Bright professional greenhouse lab / plant research scientist close up -->
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover rounded-[22px]" alt="Scientific Horticulture Consulting">
+            </div>
+        </div>
 
+        <!-- SUB-SECTION 02 -->
+        <div id="technical-advisory" class="grid lg:grid-cols-12 gap-12 items-center scroll-block-reveal">
+            <div class="lg:col-span-6 h-[420px] md:h-[520px] overflow-hidden eco-mesh-card">
+                <!-- PHOTO 3: Microscopic plant research or green botanical analytics computing -->
+                <img src="https://images.unsplash.com/photo-1532187863486-abf9d39d6618?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover rounded-[22px]" alt="Precision Crop Data Tracking">
+            </div>
+            <div class="lg:col-span-6 space-y-6">
+                <div class="text-eco-neon font-mono text-xs font-bold tracking-widest uppercase">// SYSTEM MODULE 02</div>
+                <h3 class="text-3xl md:text-5xl font-organic-brand font-700 text-white uppercase leading-tight">Technical Systems & <br><span class="text-eco-neon">Bio-Security Protocols</span></h3>
+                <p class="text-neutral-400 text-sm leading-relaxed font-light">
+                    Our technical deployment frameworks integrate strict environmental pathogen barriers with computer-regulated macro-irrigation networks, minimizing ecological degradation and securing investments.
+                </p>
+                <ul class="space-y-2 text-xs font-mono text-neutral-300">
+                    <li class="flex items-center gap-2"><span class="text-eco-neon">■</span> Automating Thermal Dynamics Management</li>
+                    <li class="flex items-center gap-2"><span class="text-eco-neon">■</span> Macro-Nutrient Diagnostics Automation Systems</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SUB-SECTION 03 -->
+        <div id="sustainable-yield" class="grid lg:grid-cols-12 gap-12 items-center scroll-block-reveal">
+            <div class="lg:col-span-6 order-2 lg:order-1 space-y-6">
+                <div class="text-eco-neon font-mono text-xs font-bold tracking-widest uppercase">// SYSTEM MODULE 03</div>
+                <h3 class="text-3xl md:text-5xl font-organic-brand font-700 text-white uppercase leading-tight">Sustainable Commercial <br><span class="text-neutral-500">Resource Engineering</span></h3>
+                <p class="text-neutral-400 text-sm leading-relaxed font-light">
+                    We architect elite resource conservation programs designed specifically to lower baseline consumption variables across massive vertical arrays and automated regional hydroponic centers.
+                </p>
+                <div class="p-5 bg-white/5 rounded-2xl border border-white/10 text-xs text-neutral-400">
+                    Our high-performance technical consultations verify operational regulatory alignment throughout North American eco-corridors.
+                </div>
+            </div>
+            <div class="lg:col-span-6 order-1 lg:order-2 h-[420px] md:h-[520px] overflow-hidden eco-mesh-card">
+                <!-- PHOTO 4: High quality clean green vegetation rows in a premium modern automated agriculture system -->
+                <img src="https://images.unsplash.com/photo-1505428353121-1302c4b43c39?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover rounded-[22px]" alt="Sustainable Resource Agriculture Advisory">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION 4: LAB MATRIX STATS BAR -->
+    <section id="laboratory-node" class="py-28 bg-[#0a211b] border-y border-white/5 relative overflow-hidden px-6">
+        <div class="max-w-4xl mx-auto text-center space-y-8 scroll-block-reveal">
+            <span class="text-eco-neon font-mono text-xs font-bold tracking-[0.3em] uppercase block">ECO-SYSTEM MATRIX COUNCEL</span>
+            <h2 class="text-4xl md:text-6xl font-organic-brand font-800 text-white uppercase tracking-tighter">Verified Agricultural Intelligence.</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
+                <div class="p-6 bg-[#051611] border border-white/5 rounded-2xl">
+                    <div class="text-2xl md:text-4xl font-organic-brand font-700 text-eco-neon">100%</div>
+                    <div class="text-[9px] font-mono uppercase text-neutral-500 mt-1">Eco Compliance</div>
+                </div>
+                <div class="p-6 bg-[#051611] border border-white/5 rounded-2xl">
+                    <div class="text-2xl md:text-4xl font-organic-brand font-700 text-white">2026</div>
+                    <div class="text-[9px] font-mono uppercase text-neutral-500 mt-1">Framework Version</div>
+                </div>
+                <div class="p-6 bg-[#051611] border border-white/5 rounded-2xl">
+                    <div class="text-2xl md:text-4xl font-organic-brand font-700 text-white">OR-ST</div>
+                    <div class="text-[9px] font-mono uppercase text-neutral-500 mt-1">Regional Node</div>
+                </div>
+                <div class="p-6 bg-[#051611] border border-white/5 rounded-2xl">
+                    <div class="text-2xl md:text-4xl font-organic-brand font-700 text-eco-neon">TECH</div>
+                    <div class="text-[9px] font-mono uppercase text-neutral-500 mt-1">Consulting Rank</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: PURE LOGATION ANCHOR (Clean Minimalist Area) -->
+    <section class="bg-white text-[#051611] py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto space-y-4">
+            <span class="bg-[#051611] text-white font-mono text-[10px] font-bold uppercase px-4 py-1.5 rounded-full tracking-widest">
+                DISTRICT HUB LOCATION
+            </span>
+            <h2 class="text-3xl md:text-5xl font-organic-brand font-800 uppercase tracking-tighter">110 Industrial Way Lebanon, OR</h2>
+            <p class="text-gray-600 font-light text-sm max-w-xl mx-auto">
+                Our main consulting and technical infrastructure base remains operational out of Lebanon, Oregon, serving agricultural syndicates across the continent.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 6: BOTANICAL SYSTEM FOOTER COMMAND TERMINAL -->
+    <footer id="central-registry" class="bg-[#020a08] text-white pt-32 pb-16 border-t border-white/10 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-12 gap-16 pb-16 border-b border-white/5">
+            
+            <!-- Left Grid -->
+            <div class="lg:col-span-7 space-y-10">
+                <div>
+                    <h3 class="text-4xl md:text-6xl font-organic-brand font-800 uppercase tracking-tighter text-white leading-none">
+                        ENGINEER <br>YOUR <span class="text-eco-neon">GROWTH.</span>
+                    </h3>
+                    <p class="text-neutral-400 font-light text-xs max-w-sm mt-4">Connecting commercial cultivators, organic corporations, and high-yield laboratories with scientific advisors.</p>
+                </div>
+                <div class="space-y-2">
+                    <span class="text-eco-neon font-mono text-[9px] font-bold tracking-widest block uppercase">// DISPATCH COMPLIANCE COMMUNICATIONS</span>
+                    <a href="mailto:contact@bagwellconsulting.org" class="text-2xl md:text-4xl font-organic-brand text-white hover:text-eco-neon transition-colors break-all border-b border-white/10 pb-1 inline-block">
+                        contact@bagwellconsulting.org
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Grid -->
+            <div class="lg:col-span-5 flex flex-col justify-between items-start lg:items-end space-y-12">
+                <div class="w-full lg:text-right">
+                    <span class="text-eco-neon font-mono text-[9px] font-bold tracking-widest block mb-1 uppercase">// REAL-TIME SECURE WIREWAY</span>
+                    <a href="tel:15307479661" class="text-3xl md:text-5xl font-organic-brand font-800 tracking-tight text-eco-neon hover:text-white transition-colors">
+                        +1 (530) 747-9661
+                    </a>
+                </div>
+                <div class="w-full lg:text-right font-mono text-xs text-neutral-400 tracking-wide uppercase leading-relaxed">
+                    <strong class="text-white block font-bold font-organic-brand tracking-normal text-sm normal-case mb-2">Horticulture Consulting of Oregon LLC</strong>
+                    110 Industrial Way Lebanon,<br>
+                    OR, 97355-4329 United States
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- System Copyright Bar -->
+        <div class="max-w-7xl mx-auto px-6 md:px-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-[10px] tracking-widest text-neutral-600 font-mono uppercase gap-4">
+            <p>&copy;  HORTICULTURE CONSULTING OF OREGON LLC. BOTANICAL COEFFICIENTS RECOGNIZED.</p>
+            <p>LEBANON SYSTEM COMPLIANCE // OREGON // USA</p>
+        </div>
+    </footer>
+
+    <!-- Continuous Scroll Active Interceptor Reveal Script -->
+    <script>
+        const scrollObserverCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active-node');
+                }
+            });
+        };
+
+        const nodeObserver = new IntersectionObserver(scrollObserverCallback, {
+            threshold: 0.1,
+            rootMargin: "0px 0px -40px 0px"
+        });
+
+        document.querySelectorAll('.scroll-block-reveal').forEach(block => nodeObserver.observe(block));
+    </script>
 </body>
 </html>
